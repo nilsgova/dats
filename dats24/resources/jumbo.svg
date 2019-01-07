@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px"
+	 height="700px" viewBox="0 0 1200 700" enable-background="new 0 0 1200 700" xml:space="preserve">
+<g id="Layer_2">
+</g>
+<g id="Layer_1">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="1200" height="700"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<rect clip-path="url(#SVGID_2_)" fill="#00AC4E" width="1200" height="700"/>
+		<radialGradient id="SVGID_3_" cx="387.5947" cy="554.041" r="450" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#54B948"/>
+			<stop  offset="0.2306" style="stop-color:#4EB748"/>
+			<stop  offset="0.4586" style="stop-color:#38B44A"/>
+			<stop  offset="0.6854" style="stop-color:#00AF4C"/>
+			<stop  offset="0.9104" style="stop-color:#00A94F"/>
+			<stop  offset="1" style="stop-color:#00A650"/>
+		</radialGradient>
+		<circle clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" cx="387.595" cy="554.041" r="450"/>
+		<radialGradient id="SVGID_4_" cx="576.4834" cy="218.6865" r="390.4043" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#54B948"/>
+			<stop  offset="0.3362" style="stop-color:#4EB748"/>
+			<stop  offset="0.6681" style="stop-color:#38B44A"/>
+			<stop  offset="0.9979" style="stop-color:#00AF4C"/>
+			<stop  offset="1" style="stop-color:#00AF4C"/>
+		</radialGradient>
+		<circle clip-path="url(#SVGID_2_)" fill="url(#SVGID_4_)" cx="576.483" cy="218.688" r="390.404"/>
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="704.8223" y1="370.1797" x2="1765.0811" y2="370.1797">
+			<stop  offset="0" style="stop-color:#1BB24B"/>
+			<stop  offset="0.2819" style="stop-color:#01B14C"/>
+			<stop  offset="0.5604" style="stop-color:#00AE4D"/>
+			<stop  offset="0.8366" style="stop-color:#00AA4F"/>
+			<stop  offset="1" style="stop-color:#00A650"/>
+		</linearGradient>
+		<circle clip-path="url(#SVGID_2_)" fill="url(#SVGID_5_)" cx="1234.952" cy="370.18" r="530.129"/>
+		<radialGradient id="SVGID_6_" cx="128.0005" cy="152.0205" r="313.6365" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#54B948"/>
+			<stop  offset="0.2891" style="stop-color:#4EB748"/>
+			<stop  offset="0.5748" style="stop-color:#38B44A"/>
+			<stop  offset="0.8582" style="stop-color:#00AF4C"/>
+			<stop  offset="1" style="stop-color:#00AC4E"/>
+		</radialGradient>
+		<circle opacity="0.9" clip-path="url(#SVGID_2_)" fill="url(#SVGID_6_)" cx="128" cy="152.02" r="313.636"/>
+	</g>
+</g>
+</svg>

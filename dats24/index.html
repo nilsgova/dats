@@ -1,60 +1,130 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>Dats24</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="navbar">
-            <nav class="nav container">
+<!------------ NAVBAR -------------->
+
+<header class="header">
+    <div class="navbar">
+        <nav class="nav container">
                 <span class="navbar-toggle" id="js-navbar-toggle">
                     <i class="fas fa-bars"></i>
                 </span>
-                <a href="#" class="brand"></a>
-                <ul class="main-nav" id="js-nav">
-                    <li>
-                        <a href="#" class="nav-item">Lorem Ipsum</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-item">Lorem Ipsum</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-item">Lorem Ipsum</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-item">Lorem Ipsum</a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="#" class="brand"><img src="resources/dats24.png"></a>
+            <ul class="main-nav" id="js-nav">
+                <li>
+                    <a href="#" class="nav-item">Lorem Ipsum</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Lorem Ipsum</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Lorem Ipsum</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Lorem Ipsum</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!------------ HERO -------------->
+
+    <div class="hero darken-pseudo darken-with-text">
+        <div class="container hero-text">
+            <h1><span class="dats"> DATS 24,</span> da’s slim tanken</h1>
+            <p>DATS 24 helpt u om uw persoonlijke mobiliteit zo kostenbewust en <br> duurzaam
+                mogelijk aan te pakken.</p>
         </div>
-        <div class="hero">
-        </div>
-    </header>
-    <section class="" id="section-1">
-        <div class="container cards">
-            <div class="card">
+    </div>
+</header>
+
+<!------------ SECTION 1 -------------->
+
+<section class="" id="section-1">
+    <div class="container cards">
+        <div class="card">
+            <img class="card-img" src="resources/card1.png">
+            <div class="green-bar"></div>
+            <div class="card-content">
+                <p class="date"> 25 december</p>
+                <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</h3>
+                <p>Nunc non nunc venenatis metus porttitor interdum. Praesent posuere
+                    sapien neque, quis tristique diam dictum a. Ut gravida, risus eget
+                    placerat suscipit, massa est varius libero, at posuere sem ligula
+                    eget libero. Donec eu euismod odio. Donec placerat tempus dolor
+                    quis semper. Nulla efficitur sapien in quam vehicula, sit amet fringilla
+                    massa lobortis. Aenean vehicula egestas quam quis interdum.
+                    Sed elementum tempus felis dignissim sodales<span id="dots">...</span><span id="more">erisque enim
+                        ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce
+                        luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+                        ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
+                        gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                        tempor porta.</span></p>
+                <button onclick="readMore()" class="card-button" id="card-btn"> lees meer</button>
             </div>
-
         </div>
 
-    </section>
-    <section class="" id="section-2">
-        <div class="container">
-            <h1>Lorem Ipsum Dorm</h1>
+
+        <div class="card">
+            <img class="card-img" src="resources/card2.png">
+            <div class="green-bar"></div>
+            <div class="card-content">
+                <p class="date"> 25 december</p>
+                <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</h3>
+                <p>Nunc non nunc venenatis metus porttitor interdum. Praesent posuere
+                    sapien neque, quis tristique diam dictum a. Ut gravida, risus eget
+                    placerat suscipit, massa est varius libero, at posuere sem ligula
+                    eget libero. Donec eu euismod odio. Donec placerat tempus dolor
+                    quis semper. Nulla efficitur sapien in quam vehicula, sit amet fringilla
+                    massa lobortis. Aenean vehicula egestas quam quis interdum.
+                    Sed elementum tempus felis dignissim sodales.
+                <button class="card-button">lees meer</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!------------ SECTION 2 -------------->
+
+<section class="" id="section-2">
+    <div class="container">
+        <h1>Lorem <span class="dats">Ipsum Dorm</span></h1>
+        <div class="card-section-2">
+            <img class="card-img flex-item" src="resources/card3.png">
+            <div class="green-bar-section-2"></div>
+            <div class="card-content-section-2 flex-item">
+                <p class="date"> 25 december</p>
+                <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</h3>
+                <p>Nunc non nunc venenatis metus porttitor interdum. Praesent posuere
+                    sapien neque, quis tristique diam dictum a. Ut gravida, risus eget
+                    placerat suscipit, massa est varius libero, at posuere sem ligula
+                    eget libero. Donec eu euismod odio. Donec placerat tempus dolor
+                    quis semper. Nulla efficitur sapien in quam vehicula, sit amet fringilla
+                    massa lobortis. Aenean vehicula egestas quam quis interdum.
+                    Sed elementum tempus felis dignissim sodales </p>
+            </div>
         </div>
 
-    </section>
+</section>
 
-    <footer class="" id="footer">
+<footer class="" id="footer">
 
-    </footer>
+</footer>
 
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
