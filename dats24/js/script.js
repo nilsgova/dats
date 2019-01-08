@@ -1,17 +1,23 @@
 // navbar toggle
 
 let mainNav = document.getElementById('js-nav');
-
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
-
-
 navBarToggle.addEventListener('click', function () {
-
     mainNav.classList.toggle('active');
-
 });
 
+
+// Navbar selected
+
+var item = mainNav.getElementsByClassName("nav-item");
+for (var i = 0; i < item.length; i++) {
+    item[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("selected");
+        current[0].className = current[0].className.replace(" selected", "");
+        this.className += " selected";
+    });
+}
 
 
 // view more
@@ -31,3 +37,5 @@ function readMore() {
         moreText.style.display = "inline";
     }
 }
+
+

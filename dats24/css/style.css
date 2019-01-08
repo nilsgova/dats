@@ -8,6 +8,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: white;
 }
 
 h1, .card-title {
@@ -17,7 +18,7 @@ h1, .card-title {
     font-size: 3em;
 }
 
-a, p {
+a, p, label {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     color: #586874;
@@ -33,7 +34,7 @@ a, p {
 /*---- NAVBAR ----*/
 
 .navbar {
-    background-color: white;
+    background-color: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 1.25rem;
@@ -80,6 +81,10 @@ a, p {
     transition: ease 1s;
 }
 
+.selected {
+    color: #aac449;
+}
+
 @media screen and (min-width: 768px) {
 
     .nav {
@@ -106,7 +111,25 @@ a, p {
         transition: 0.3s;
     }
 
-    .nav-item:hover {
+    .selected:after, .nav-item::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #aac449;
+        margin-left: 40px;
+        padding-bottom: 5px;
+        width: 0;
+        transition: 0.5s;
+    }
+
+    .selected:after {
+        width: 70%;
+    }
+
+    .nav-item:hover:after {
+        width: 70%;
+    }
+
+    .selected, .nav-item:hover {
         color: #aac449;
     }
 
@@ -124,7 +147,7 @@ a, p {
     display: flex;
     position: relative;
     width: 100vw;
-    background-image: url(../resources/roadmap.png);
+    background-image: url(../resources/roadmap.svg);
     min-height: 410px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,7 +176,7 @@ a, p {
     flex-direction: column;
 }
 
-.darken-with-text h1{
+.darken-with-text h1 {
     margin: 0;
     font-size: 3em;
     color: white;
@@ -166,7 +189,7 @@ a, p {
     border-bottom: 7px solid #aac449;
 }
 
-.darken-with-text p{
+.darken-with-text p {
     margin: 0;
     color: white;
     font-size: 1.5em;
@@ -179,23 +202,25 @@ a, p {
     .hero-text {
         margin: 0 10px;
     }
+
     .darken-with-text h1 {
         font-size: 2em;
     }
+
     .darken-with-text p {
         font-size: 1em;
     }
 }
 
-
 /* --- SECTION 1 --- */
 
 #section-1 {
+    margin-top: -70px;
     margin-bottom: 100px;
 }
 
 .cards {
-    margin-top: -35px;
+    margin-top: -55px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -219,6 +244,7 @@ a, p {
 
 .card-content {
     margin: 15px 15px;
+    margin-bottom: 25px;
 }
 
 .date {
@@ -287,7 +313,7 @@ a, p {
     }
 
     .card {
-        margin: 0 auto;
+        margin: 15px auto;
         width: 100vw;
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
@@ -300,21 +326,20 @@ a, p {
     }
 }
 
-
 /* --- SECTION 2 --- */
 
 #section-2 {
-    background-color: #586874;
+    background-color: #ebeeef;
     padding: 50px 0;
+    padding-bottom: 100px;
     display: flex;
 }
 
 #section-2 h1 {
     text-align: right;
     margin-bottom: 50px;
-    color: white;
+    color: #586874;
 }
-
 
 .card-section-2 {
     display: flex;
@@ -336,7 +361,7 @@ a, p {
 }
 
 .green-bar-section-2 {
-    width: 7px;
+    width: 15px;
     background-color: #aac449;
 }
 
@@ -345,16 +370,156 @@ a, p {
     border-top-left-radius: 8px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     .card-section-2 {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     .card-section-2 img {
         width: 100vw;
     }
-#section-2 h1 {
-    margin-right: 15px;
+
+    .h1-right {
+        margin-right: 15px;
+    }
+
+    .h1-left {
+        margin-left: 15px;
+    }
+
 }
 
+/* --------- FORM ------- */
+
+#form {
+    margin: 50px 0;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    border: 1px solid #aac449;
+    border-radius: 5px;
+    color: #aac449;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 26%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 74%;
+}
+
+input[type=submit]:hover {
+    background-color: #aac449;
+    color: white;
+    border: #aac449;
+}
+
+form {
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #aac449;
+    padding: 20px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-box-shadow: 4px 10px 22px -8px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 4px 10px 22px -8px rgba(0, 0, 0, 0.58);
+    box-shadow: 4px 10px 22px -8px rgba(0, 0, 0, 0.58);
+}
+
+.flex {
+    display: flex;
+}
+
+label {
+    margin: auto 15px;
+}
+
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: transparent;
+    border-bottom: 1px solid #aac449;
+    box-sizing: border-box;
+    color: #aac449;
+}
+
+.smaller {
+    width: 60%;
+    margin-right: 20%
+}
+
+.smallest {
+    width: 50%;
+    margin-right: 30%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 650px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    label {
+        margin-left: 0px;
+    }
+
+    form {
+        border: none;
+        border-bottom: 2px solid #aac449;
+        border-top: 2px solid #aac449;
+    }
+
+}
+
+/* -------- FOOTER ------- */
+
+.footer-box {
+    background-color: #586874;
+    padding: 25px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.columns {
+    flex-shrink: 1;
+    width: 230px;
+}
+
+.columns li {
+    list-style: none;
+}
+
+.columns li a {
+    margin-left: 55px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.columns li a:hover {
+    color: #aac449;
+}
+
+.blue-line {
+    background-color: #00b5e2;
+    height: 45px;
 }
